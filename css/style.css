@@ -11,7 +11,9 @@
 html {
     font-size: 20px;
 }
-
+body{
+    overflow-x: hidden;
+}
 .th-btn {
     font-family: var(--font-family);
     font-size: clamp(.8rem, 3vw, 1rem);

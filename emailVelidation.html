@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" name="email" placeholder="Inter your email">
+        <button type="submit">Check</button>
+    </form>
+
+
+
+    <!-- ========== Jquery Js ========== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('[type="submit"]').click(function (e) {
+            e.preventDefault()
+            let inpValue = $(`[name="email"]`).val()
+
+            if (inpValue.length <= 10) {
+                alert("Not a valid email 1")
+            }
+            let lengthDot = inpValue.slice((inpValue.lastIndexOf(".") + 1))
+            if (lengthDot.length >= 4) {
+                alert('Not a valid email 2')
+            }
+            let lengthBetweendot = inpValue.slice((inpValue.indexOf("@") + 1), inpValue.lastIndexOf('.'))
+            if (lengthBetweendot.length <= 2) {
+                alert('Not a valid email 3')
+            }
+        })
+    </script>
+</body>
+
+</html>
