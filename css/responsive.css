@@ -24,6 +24,13 @@
     .about-card-container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+    .sec-head {
+        transform: translateX(  0px) !important;
+    }
+    .sec-head h2{
+        margin-left: 0 !important;
+        margin-top: 10px !important;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -79,5 +86,12 @@
         margin: 0;
         padding: 0;
     }
-
+    .proud-partnerships{
+        background-position: left center;
+        padding: 50px 0;
+    }
+    .our-placements-head::before{
+        height: 4px;
+        bottom: 15px;
+    }
 }

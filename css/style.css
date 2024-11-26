@@ -80,19 +80,24 @@ h6 {
 
 .sec-head {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    align-items: start;
+    /* gap: 10px; */
     padding-bottom: 20px;
-    border-bottom: 1px solid #D1CFCF;
     margin-bottom: 80px;
+    transform: translateX(-20px) !important;
 }
 
 .sec-head img {
-    max-width: 20px;
+    width: 20px;
+    margin: 0px;
 }
 
-.sec-head h6 {
+.sec-head h2 {
+    margin-left: 20px !important;
     margin: 0px;
+    padding-bottom: 15px;
+    border-bottom: 8px solid var(--color-4);
 }
 
 p {
@@ -145,7 +150,6 @@ p {
     z-index: 10;
     /* background: linear-gradient(to top, #EFFFE0 27.34%, rgba(2, 34, 27, 0) 98.49%); */
     background: linear-gradient(to top, #11240f 27.34%, rgba(17, 36, 15, 0) 98.49%);
-
 }
 
 .floting-img #hero-img-1 {
@@ -198,7 +202,6 @@ p {
 .trusted-partners h2 {
     color: var(--color-2);
 }
-
 /* ============ Trusted Partners End */
 
 /* About Start ============ */
@@ -236,7 +239,9 @@ p {
     background-color: var(--color-1);
     color: var(--color-3);
 }
-
+.our-product h2{
+    color: var(--color-2);
+}
 .product-inner {
     /* max-width: 1200px; */
     overflow-x: scroll;
@@ -359,6 +364,22 @@ text-align: center;
 
 /* ============ Why Choose End */
 
+/* Proud Partnerships Start ============ */
+.proud-partnerships{
+    background: url(../image/proud-partnerships.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+.proud-partnerships h2{
+    display: inline-block;
+    padding-bottom: 15px;
+    border-bottom: 8px solid rgb(203, 32, 55);
+}
+/* ============ Proud Partnerships End */
+
+
 /* Sectors we cater Start ============ */
 .sectors-we-cater {
     background-color: #FFFBEE;
@@ -415,7 +436,18 @@ text-align: center;
 .our-placements {
     padding: 80px 0;
 }
-
+.our-placements-head{
+    position: relative;
+}
+.our-placements-head::before{
+    content: ' ';
+    width: 100%;
+    height: 8px;
+    background-color: var(--color-4);
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+}
 /* ============ Our Placements End */
 
 /* Testimonial Start ============ */
@@ -497,7 +529,10 @@ text-align: center;
 .contact-us {
     padding: 80px 0;
 }
-
+.contact-us .sec-head {
+    border-bottom: 1px solid rgb(217, 221, 220); 
+    gap:10px;
+}
 .contact-info {
     max-width: 330px;
 }
