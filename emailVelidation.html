@@ -20,7 +20,7 @@
     <script>
         $('[type="submit"]').click(function (e) {
             e.preventDefault()
-            let inpValue = $(`[name="email"]`).val()
+            /* let inpValue = $(`[name="email"]`).val()
 
             if (inpValue.length <= 10) {
                 alert("Not a valid email 1")
@@ -30,9 +30,14 @@
                 alert('Not a valid email 2')
             }
             let lengthBetweendot = inpValue.slice((inpValue.indexOf("@") + 1), inpValue.lastIndexOf('.'))
+            alert(inpValue.lastIndexOf('.') -inpValue.indexOf("@")-1)
+            alert(lengthBetweendot)
             if (lengthBetweendot.length <= 2) {
                 alert('Not a valid email 3')
-            }
+               
+            } */
+            let email = $(`[name="email"]`).val()
+           
         })
     </script>
 </body>

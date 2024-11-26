@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
-    --color-1: #EFFFE0;
+    /* --color-1: #EFFFE0; */
+    --color-1: #11240f;
     --color-2: #ffffff;
     --color-3: #000000;
     --color-4: #FCC40F;
@@ -20,9 +21,9 @@ body{
     font-weight: 500;
     line-height: 30px;
     text-align: center;
-    color: var(--color-3);
+    color: var(--color-2);
     padding: 14px 20px;
-    border: 1px solid var(--color-3);
+    border: 1px solid var(--color-2);
     text-decoration: none;
     border-radius: 50px;
     display: inline-block;
@@ -30,8 +31,8 @@ body{
 }
 
 .th-btn:hover {
+    color: var(--color-1);
     background-color: var(--color-2);
-    border: 1px solid var(--color-2);
     transform: scale(1.05);
 }
 
@@ -118,8 +119,7 @@ p {
     line-height: 1.2rem;
     letter-spacing: -0.004em;
     text-align: center;
-    color: var(--color-3);
-
+    color: var(--color-2);
 }
 
 .nav-link:hover {
@@ -143,7 +143,8 @@ p {
     bottom: 0px;
     left: 0px;
     z-index: 10;
-    background: linear-gradient(to top, #EFFFE0 27.34%, rgba(2, 34, 27, 0) 98.49%);
+    /* background: linear-gradient(to top, #EFFFE0 27.34%, rgba(2, 34, 27, 0) 98.49%); */
+    background: linear-gradient(to top, #11240f 27.34%, rgba(17, 36, 15, 0) 98.49%);
 
 }
 
@@ -176,11 +177,11 @@ p {
 }
 
 .hero h1 {
-    color: var(--color-3);
+    color: var(--color-2);
 }
 
 .hero p {
-    color: var(--color-3);
+    color: var(--color-2);
     max-width: 650px;
     margin: auto;
 }
@@ -195,7 +196,7 @@ p {
 }
 
 .trusted-partners h2 {
-    color: var(--color-3);
+    color: var(--color-2);
 }
 
 /* ============ Trusted Partners End */
@@ -537,11 +538,11 @@ text-align: center;
 }
 
 .contact-form h2 {
-    color: var(--color-3);
+    color: var(--color-2);
 }
 
 .contact-form p {
-    color: var(--color-3);
+    color: var(--color-2);
     text-align: left;
     font-size: 14px;
 }
@@ -550,14 +551,14 @@ text-align: center;
     font-family: var(--font-family);
     font-size: 14px;
     font-weight: 500;
-    color: var(--color-3);
+    color: var(--color-2);
 }
 
 .contact-form input,
 .contact-form textarea {
     font-family: var(--font-family);
-    color: var(--color-3);
-    background-color: #E2F5CE;
+    color: var(--color-2);
+    background-color: hsla(112, 41%, 13%, 1);
     border: none;
     display: block;
     width: 100%;
@@ -579,13 +580,13 @@ text-align: center;
 }
 
 .get-text h2 {
-    color: var(--color-3);
+    color: var(--color-2);
     font-size: clamp(1.5rem, 7vw, 4rem);
     line-height: 95%;
 }
 
 .get-text p {
-    color: var(--color-3);
+    color: var(--color-2);
     text-align: start;
 }
 
@@ -633,14 +634,14 @@ footer ul li:first-child {
     font-family: var(--font-family);
     font-size: 1rem;
     font-weight: 600;
-    color: var(--color-3);
+    color: var(--color-2);
 }
 
 footer ul li a {
     font-family: var(--font-family);
     font-size: 16px;
     font-weight: 400;
-    color: var(--color-3);
+    color: var(--color-2);
     text-decoration: none;
 }
 
@@ -658,7 +659,7 @@ footer ul li a .th-btn {
 }
 
 .foot-so-box {
-    color: var(--color-3);
+    color: var(--color-2);
     text-decoration: none;
     margin-bottom: 10px;
     font-size: 16px;
@@ -678,7 +679,7 @@ footer ul li a .th-btn {
     font-family: var(--font-family);
     font-size: 14px;
     font-weight: 400;
-    color: var(--color-3);
+    color: var(--color-2);
     text-align: right;
 }
 
