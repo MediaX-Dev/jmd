@@ -158,7 +158,7 @@
                     <h6>About Us</h6>
                 </div>
                 <div class="row gap-4 gap-md-0 justify-content-between">
-                    <div class="col-md-5" data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">
+                    <div class="col-md-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
                         <div class="about-text">
                             <h2 class="mb-5">Distributors of Ayurvedic body care.</h2>
                             <p class="text-start">JMD Group is a pioneering force in the distribution of organic,
@@ -171,7 +171,7 @@
                                 access to premium wellness products across 27 markets worldwide.</p>
                         </div>
                     </div>
-                    <div class="col-md-6" data-aos="fade-left" data-aos-duration="500" data-aos-delay="300">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
                         <div class="about-card-container">
                             <div class="about-card">
                                 <div class="">
@@ -270,7 +270,7 @@
                     <img src="image/sec-h-img.png" alt="">
                     <h6>Why choose us</h6>
                 </div>
-                <h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">JMD Group as Your <br> Distribution Partner</h2>
+                <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">JMD Group as Your <br> Distribution Partner</h2>
 
                 <div class="why-choose-container">
                     <div class="row mt-3">
@@ -389,7 +389,7 @@
                     <img src="image/sec-h-img.png" alt="">
                     <h6>Partners</h6>
                 </div>
-                <h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="300">
+                <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
                     Our Leading <br> Distribution Partners
                 </h2>
                 <div class="row">
@@ -425,7 +425,7 @@
 
         <!-- Our Placements Section Strat ============ -->
         <div class="our-placements">
-            <div class="container-xxl mb-4" data-aos="fade-right" data-aos-duration="500">
+            <div class="container-xxl mb-4" data-aos="fade-up" data-aos-duration="500">
                 <h2>Our Placements</h2>
             </div>
             <div class="container-fluid" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
@@ -469,7 +469,7 @@
         <section class="testimonial">
             <div class="container-xxl">
                 <div class="" data-aos="fade-up" data-aos-duration="500">
-                    <h2 class="text-center">What our partners say</h2>
+                    <h2 class="text-center">Partner's Testimonials</h2>
                 <p class="text-center">Thousands of happy customers that changed their energy use</p>
                 </div>
                 <div class="testimonial-container mt-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
@@ -594,7 +594,7 @@
         <section class="contact-us" id="contact-us">
             <div class="container-xxl">
                 <div class="row justify-content-between">
-                    <div class="col-md-5" data-aos="fade-right" data-aos-duration="500">
+                    <div class="col-md-5" data-aos="fade-up" data-aos-duration="500">
                         <div class="sec-head">
                             <img src="image/sec-h-img.png" alt="">
                             <h6>Contact Us</h6>
@@ -607,7 +607,7 @@
                                 <div class="contact-text">
                                     <h5>Write Us</h5>
                                     <p>We're here to help with any questions or partnership inquiries!</p>
-                                    <a href="">info@jmdgroup.co.uk</a>
+                                    <a href="mailto:sales@jmdgroup.co.uk">sales@jmdgroup.co.uk</a>
                                 </div>
                             </div>
                             <div class="contact-info d-flex gap-3 mb-3 mb-md-4">
@@ -636,7 +636,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-7" data-aos="fade-left" data-aos-duration="500">
+                    <div class="col-md-7" data-aos="fade-up" data-aos-duration="500">
                         <div class="contact-form">
                             <h2>Let&lsquo;s Build a Partnership</h2>
                             <p>We&lsquo;d love to hear from you! Whether you have partnership inquiries or general
@@ -679,7 +679,7 @@
 
         <!-- Get In Touch Section Strat ============ -->
         <section class="get-in-touch d-flex flex-column flex-md-row align-items-center justify-content-between ">
-            <div class="get-text" data-aos="fade-right" data-aos-duration="500">
+            <div class="get-text" data-aos="fade-up" data-aos-duration="500">
                 <h2>Get in touch for <br> inquiries or partnerships!</h2>
                 <p>
                     Enter your email for partnership opportunities or any inquiries. Our team will respond
@@ -690,7 +690,7 @@
                     <button class="th-btn yellow">Get in touch</button>
                 </form>
             </div>
-            <div class="get-img" data-aos="fade-left" data-aos-duration="500">
+            <div class="get-img" data-aos="fade-up" data-aos-duration="500">
                 <img src="image/get-in-img.png" class="w-100" alt="">
             </div>
         </section>
@@ -788,14 +788,14 @@
         $('.testimonial-slider').slick({
             dots: false,
             infinite: true,
-            // fade: true,
+            fade: true,
             cssEase: 'linear',
             autoplay: true,
-            autoplaySpeed: 1000,
+            autoplaySpeed: 3000,
         });
         $('#test-left').click(function () {
             $('.testimonial-slider').slick('slickPrev'); // Go to the previous slide
-        });
+        }); 
 
         $('#test-right').click(function () {
             $('.testimonial-slider').slick('slickNext'); // Go to the next slide
@@ -807,7 +807,7 @@
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 0,
-            speed: 4000,
+            speed: 3000,
             pauseOnHover: false,
             cssEase: 'linear',
             responsive: [
@@ -841,7 +841,7 @@
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 0,
-            speed: 4000,
+            speed: 5000,
             pauseOnHover: false,
             cssEase: 'linear',
             responsive: [
