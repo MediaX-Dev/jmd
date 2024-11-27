@@ -665,12 +665,12 @@ footer ul {
     list-style: none;
 }
 
-footer ul li:first-child {
+/* footer ul li:first-child {
     font-family: var(--font-family);
     font-size: 1rem;
     font-weight: 600;
     color: var(--color-2);
-}
+} */
 
 footer ul li a {
     font-family: var(--font-family);
