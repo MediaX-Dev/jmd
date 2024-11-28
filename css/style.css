@@ -297,6 +297,7 @@ header>.container-xxl img {
 
 .pro-scr-items img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .pro-text {
@@ -330,7 +331,7 @@ header>.container-xxl img {
     /* width: 150%; */
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(4, 350px);
+    grid-template-columns: repeat(5, 350px);
 }
 
 /* ============ Our Product End */
