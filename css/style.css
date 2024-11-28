@@ -271,11 +271,14 @@ header>.container-xxl img {
 }
 
 .product-inner {
-    /* max-width: 1200px; */
+    max-width: 1200px;
     overflow-x: scroll;
     padding-bottom: 20px;
     margin-top: 80px;
     color: var(--color-2);
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5, 350px);
 }
 
 .product-inner::-webkit-scrollbar {
@@ -328,12 +331,7 @@ header>.container-xxl img {
     visibility: visible;
 } */
 
-.product-inner {
-    /* width: 150%; */
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(5, 350px);
-}
+
 
 /* ============ Our Product End */
 
