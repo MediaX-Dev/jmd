@@ -54,7 +54,7 @@
     }
 
     .th-btn {
-        padding: 10px;
+        padding: 20px 10px;
     }
 
     .product-inner {
@@ -185,5 +185,12 @@
     .proud-partnerships h2,
     .sec-head h2{
         width: 100%;
+    }
+    .proud-text{
+        background-color: #FFFBEE;
+        padding: 30px 15px;
+    }
+    .proud-partnerships {
+        padding-bottom: 0px;
     }
 }

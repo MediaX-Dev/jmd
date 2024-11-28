@@ -112,7 +112,7 @@
                                     organic, natural,
                                     herbal and Ayurveda-based products.
                                 </p>
-                                <div class="btn-box mt-4 d-flex justify-content-center flex-column flex-md-row gap-3">
+                                <div class="btn-box mt-5 d-flex justify-content-center flex-column flex-md-row gap-4">
                                     <a href="" class="th-btn yellow">Check Our Catalogue</a>
                                     <a href="#contact-us" class="th-btn"> Get in Touch</a>
                                 </div>
@@ -232,13 +232,21 @@
          <!-- Proud Partnerships Section Strat ============ -->
          <section class="proud-partnerships" id="proud-partnerships">
             <div class="container-xxl">
-                <div class="row align-items-center gap-3 gap-md-0">
-                    <div class="col-md-6 order-md-1"><img src="image/partner-sec.png" alt="" class="w-100"></div>
-                    <div class="col-lg-5 col-md-6 order-md-0">
-                        <h2 class="mb-3 mb-sm-5">Proud Partnerships</h2>
-                        <p>
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-1 p-0">
+                       <div class="px-2">
+                        <h2 class="d-block d-sm-none">Proud Partnerships</h2>
+                       </div>
+                    
+                        <img src="image/partner-sec.png" alt="" class="w-100">
+                    </div>
+                    <div class="col-lg-5 col-md-6 order-md-0 p-0 p-sm-auto">
+                        <div class="proud-text">
+                            <h2 class="mb-3 mb-sm-5 d-none d-sm-block">Proud Partnerships</h2>
+                        <p class="m-0">
                             We're proud to partner with some of the leading names in the industry, ensuring the wide distribution of our Ayurvedic, natural, and sustainable products across 27 markets in the EU and the UK. Our commitment to quality and sustainability helps us bring the best of nature to consumers worldwide.
                         </p>
+                        </div>
                     </div>
                    
                 </div>
@@ -337,7 +345,7 @@
                         </div>
                     </div>
                     <div class="col-6 text-end d-none d-md-block">
-                        <a href="" class="th-btn">Download Catelogue</a>
+                        <a href="" class="th-btn">Download Catalogue</a>
                     </div>
                 </div>
                 <div class="product-scroll">
@@ -443,15 +451,12 @@
                 </div>
             </div>
         </section>
-        <section class="sectors-we-cater d-none">
+        <section class="sectors-we-cater">
             <div class="container-xxl">
                 <div class="sec-head" data-aos="fade-up" data-aos-duration="500">
                     <img src="image/sec-h-img.png" alt="">
-                    <h6>Partners</h6>
+                    <h2>  Our Leading <br> Distribution Partners</h2>
                 </div>
-                <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
-                    Our Leading <br> Distribution Partners
-                </h2>
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-6 mt-3">
                         <img src="image/leading-1.png" alt="" class="w-100" data-aos="fade-up" data-aos-duration="500"
@@ -775,7 +780,7 @@
     <footer>
         <img src="image/footer-lines.png" class="foot-lines" alt="">
         <div class="container-xxl">
-            <div class="row mb-5 justify-content-evenly">
+            <div class="row justify-content-evenly">
                 <div class="col-sm-6 col-lg-3 order-lg-0">
                     <div class="foot-img">
                         <img src="image/logo.png" class="w-100" alt="">
@@ -828,9 +833,9 @@
                 </div>
             </div>
 
-            <div class="foot-bottom mt-5">
+            <!-- <div class="foot-bottom mt-5">
                 <p>© 2024 Flow. All rights reserved.</p>
-            </div>
+            </div> -->
         </div>
     </footer>
     <!-- ============ Footer Section End -->
@@ -951,6 +956,7 @@
         })
         $('.read-more').click(function(){
             const id = $(this).attr('id')
+            $(this).addClass('d-none')
             $(`[data-read-more="${id}"]`).toggleClass('active')
         })
     </script>
