@@ -14,8 +14,9 @@
     .get-text {
         padding: 50px;
     }
+
     .hero {
-        padding:100px 0px 300px 0px;
+        padding: 100px 0px 300px 0px;
     }
 }
 
@@ -24,10 +25,12 @@
     .about-card-container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+
     .sec-head {
-        transform: translateX(  0px) !important;
+        transform: translateX(0px) !important;
     }
-    .sec-head h2{
+
+    .sec-head h2 {
         margin-left: 0 !important;
         margin-top: 10px !important;
     }
@@ -36,7 +39,7 @@
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
     .hero {
-        padding: 100px 0;
+        padding: 50px 0;
     }
 
     .floting-img #hero-img-1,
@@ -75,11 +78,55 @@
     #test-right {
         text-align: start;
     }
-    .test-arrow{
+
+    .test-arrow {
         margin-top: 20px;
     }
-    .proud-partnerships{
+
+    .proud-partnerships {
         padding-bottom: 50px;
+    }
+    .testimonial-inner {
+        gap: 10px;
+        padding: 1rem;
+        border-radius: 10px;
+        border: 1px solid #575C5629;
+    }
+    h1 {
+        letter-spacing: 0px;
+    }
+    .hero::before{
+        display: none;
+    }
+    .sec-head img{
+        display: none;
+    }
+    .sec-head h2{
+        margin-top: 0px !important;
+    }
+    .sec-head {
+        margin-bottom: 20px;
+    }
+    .product-inner {
+        /* max-width: 1200px; */
+        overflow-x: hidden;
+    }
+    .product-inner {
+        /* width: 150%; */
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .our-product     .sec-head h2 {
+       width: 100%;
+    }
+    .product-inner{
+        margin-top: 30px;
+    }
+    .contact-form {
+        padding: 40px 20px;
+        background-color: var(--color-1);
+        border-radius: 0px;
     }
 }
 
@@ -89,12 +136,54 @@
         margin: 0;
         padding: 0;
     }
-    .proud-partnerships{
+
+    .proud-partnerships {
         background-position: left center;
         padding: 50px 0;
     }
-    .our-placements-head::before{
+
+    .our-placements-head::before {
         height: 4px;
         bottom: 15px;
+    }
+
+    
+    .th-btn {
+        line-height: 100%;
+    }
+    header>.container-xxl img {
+        max-width: 60px;
+    }
+    .hero{
+        padding-bottom: 0;
+    }
+    .our-placements,
+    .contact-us,
+    .our-product,
+    .why-choose-us,
+    .about-us
+    {
+        padding: 40px 0;
+    }
+    
+    .test-img{
+        max-width: 70px;
+    }
+    .about-card-container {
+        grid-template-rows: 110px 110px;
+    }
+    .get-text input{
+        flex: 1 1 38px;
+        padding: 10px 20px;
+    }
+    .contact-us{
+        padding-top: 0;
+    }
+    .contact-us .sec-head{
+        border: none;
+    }
+    .proud-partnerships h2,
+    .sec-head h2{
+        width: 100%;
     }
 }

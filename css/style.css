@@ -12,9 +12,11 @@
 html {
     font-size: 20px;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
+
 .th-btn {
     font-family: var(--font-family);
     font-size: clamp(.8rem, 3vw, 1rem);
@@ -47,21 +49,27 @@ body{
     background-color: var(--color-4);
 }
 
-
-
+.read-more{
+    cursor: pointer;
+}
+.read-more-text{
+    display: none !important;
+}
+.read-more-text.active{
+    display: inline-block !important;
+}
 h1 {
     font-family: var(--font-family);
-    font-size: clamp(1.5rem, 7vw, 6.5rem);
+    font-size: clamp(2rem, 7vw, 6.5rem);
     font-weight: 400;
     line-height: 97%;
     letter-spacing: -5px;
     text-align: center;
-    
 }
 
 h2 {
     font-family: var(--font-family);
-    font-size: clamp(1rem, 3vw, 2.5rem);
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
     font-weight: 400;
     line-height: 120%;
 }
@@ -108,8 +116,18 @@ p {
 }
 
 /* Header Start ============ */
+header {
+    background-color: var(--color-1) !important;
+}
+
+header>.container-xxl img {
+    width: 100%;
+    max-width: 85px;
+}
+
 .navbar {
     background-color: var(--color-1) !important;
+
     padding: 20px 0px;
 }
 
@@ -202,6 +220,7 @@ p {
 .trusted-partners h2 {
     color: var(--color-2);
 }
+
 /* ============ Trusted Partners End */
 
 /* About Start ============ */
@@ -224,7 +243,9 @@ p {
     border-radius: 20px;
     padding: 10px;
 }
-
+.about-card p{
+    margin-bottom: 0;
+}
 .about-card:first-child,
 .about-card:last-child {
     background-color: var(--color-4);
@@ -239,9 +260,15 @@ p {
     background-color: var(--color-1);
     color: var(--color-3);
 }
-.our-product h2{
+
+.our-product .sec-head {
+    margin: 0;
+}
+
+.our-product h2 {
     color: var(--color-2);
 }
+
 .product-inner {
     /* max-width: 1200px; */
     overflow-x: scroll;
@@ -282,6 +309,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border-radius: 16px;
     opacity: 0;
     visibility: hidden;
@@ -293,10 +321,10 @@ p {
     visibility: visible;
 }
 
-.pro-scr-items:hover .pro-text {
+/* .pro-scr-items:hover .pro-text {
     opacity: 1;
     visibility: visible;
-}
+} */
 
 .product-inner {
     /* width: 150%; */
@@ -308,10 +336,11 @@ p {
 /* ============ Our Product End */
 
 /* Main Video Start ============ */
-.video-box{
+.video-box {
     position: relative;
 }
-.video-box .video-text{
+
+.video-box .video-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -322,14 +351,17 @@ p {
     height: 100%;
     padding: 10px;
 }
-.video-box .video-text h2{
+
+.video-box .video-text h2 {
     color: var(--color-2);
-font-weight: 800;
-text-align: center;
+    font-weight: 800;
+    text-align: center;
 }
-.video-box .video-text .yellow{
+
+.video-box .video-text .yellow {
     color: var(--color-4);
 }
+
 /* ============ Main Video End */
 
 
@@ -337,7 +369,9 @@ text-align: center;
 .why-choose-us {
     padding: 80px 0;
 }
-
+.why-choose-box{
+    height: 100%;
+}
 .why-choose-box img {
     width: 50px;
     margin-bottom: 15px;
@@ -351,32 +385,38 @@ text-align: center;
 
 .why-choose-box p {
     font-family: var(--font-family);
-    font-size: 16px;
+    font-size: clamp(.65rem, 2vw, .8rem);
     font-weight: 400;
     text-align: left;
     color: #646A69;
+    margin: 0;
 }
 
 .why-choose-box a {
     color: var(--color-3);
     text-decoration: none;
 }
+.why-choose-box{
+    border: 1px solid #F1F1F1;
+}
 
 /* ============ Why Choose End */
 
 /* Proud Partnerships Start ============ */
-.proud-partnerships{
+.proud-partnerships {
     background: url(../image/proud-partnerships.jpg);
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     /* padding-top: 80px; */
 }
-.proud-partnerships h2{
+
+.proud-partnerships h2 {
     display: inline-block;
     padding-bottom: 15px;
     border-bottom: 8px solid rgb(203, 32, 55);
 }
+
 /* ============ Proud Partnerships End */
 
 
@@ -436,10 +476,16 @@ text-align: center;
 .our-placements {
     padding: 80px 0;
 }
-.our-placements-head{
+
+.our-placements img {
+    border-radius: 30px;
+}
+
+.our-placements-head {
     position: relative;
 }
-.our-placements-head::before{
+
+.our-placements-head::before {
     content: ' ';
     width: 100%;
     height: 8px;
@@ -448,12 +494,14 @@ text-align: center;
     bottom: 25px;
     left: 0;
 }
+
 /* ============ Our Placements End */
 
 /* Testimonial Start ============ */
 .testimonial {
     padding: 50px 0;
 }
+
 /* .testimonial-slider{
     position: relative;
 }
@@ -466,6 +514,9 @@ text-align: center;
     top: 0;
     left: 0;
 } */
+ .testimonial-box{
+    height: 100%;
+ }
 .testimonial-inner {
     display: flex;
     flex-direction: column;
@@ -475,6 +526,7 @@ text-align: center;
     padding: 30px;
     border-radius: 10px;
     border: 1px solid #575C5629;
+    height: 100%;
 }
 
 .test-img {
@@ -493,7 +545,7 @@ text-align: center;
 
 .test-text p {
     font-family: var(--font-family);
-    font-size: 20px;
+    font-size: clamp(.8em, 2vw, 1rem);
     font-weight: 500;
     line-height: 30px;
     text-align: center;
@@ -516,7 +568,8 @@ text-align: center;
     color: #646A69;
     text-align: center;
 }
-.test-arrow{
+
+.test-arrow {
     font-size: 32px;
     color: #646A69;
     text-align: center;
@@ -529,10 +582,12 @@ text-align: center;
 .contact-us {
     padding: 80px 0;
 }
+
 .contact-us .sec-head {
-    border-bottom: 1px solid rgb(217, 221, 220); 
-    gap:10px;
+    border-bottom: 1px solid rgb(217, 221, 220);
+    gap: 10px;
 }
+
 .contact-info {
     max-width: 330px;
 }
@@ -630,7 +685,7 @@ text-align: center;
 }
 
 .get-text input {
-   flex: 1 1 250px;
+    flex: 1 1 250px;
     font-family: var(--font-family);
     color: #A8A8A8;
     background-color: var(--color-2);
@@ -651,6 +706,7 @@ footer {
 }
 
 footer .foot-lines {
+    width: 100%;
     max-width: 500px;
     position: absolute;
     bottom: 0;

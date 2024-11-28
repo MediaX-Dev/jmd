@@ -48,7 +48,19 @@
 <body>
     <!-- Header Section Strat ============ -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <div class=" container-xxl py-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img src="image/logo.png" class="w-100" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a class="th-btn d-block" href="#contact-us">Get in Touch</a>
+                </div>
+            </div>
+        </div>  
+        <!-- <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-xxl">
                 <a class="navbar-brand" href="#">
                     <img src="image/logo.png" class="w-100" alt="">
@@ -75,7 +87,7 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav> -->
     </header>
     <!-- ============ Header Section End -->
 
@@ -116,7 +128,7 @@
         <section class="trusted-partners">
             <div class="container-fluid">
                 <h2 data-aos="fade-up" data-aos-duration="500">
-                    Global Partners Which <br> Trust Us
+                    Global Partners Which <br class="d-none d-md-block"> Trust Us
                 </h2>
                 <div class="partners-slider mt-3" data-aos="fade-up" data-aos-duration="500">
                     <div class="part-item px-2">
@@ -158,7 +170,7 @@
         <section class="about-us" id="abuot-us">
             <div class="container-xxl">
 
-                <div class="row gap-4 gap-md-0 justify-content-between">
+                <div class="row gap-sm-4 gap-md-0 justify-content-between">
                     <div class="col-md-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
                         <div class="about-text">
                             <div class="sec-head" data-aos="fade-up" data-aos-duration="500">
@@ -166,11 +178,11 @@
                                 <h2>Distributors of Ayurvedic body care</h2>
                             </div>
                             <!-- <h2 class="mb-5">Distributors of Ayurvedic body care.</h2> -->
-                            <p class="text-start">JMD Group is a pioneering force in the distribution of organic,
+                            <p class="text-start d-none d-sm-block">JMD Group is a pioneering force in the distribution of organic,
                                 natural, and Ayurveda-based wellness products. Established over 25 years ago, our
                                 journey began with a vision to bring the world's most trusted health and wellness brands
                                 to consumers globally.</p>
-                            <p class="text-start">Our commitment to quality and authenticity drives us to meticulously
+                            <p class="text-start d-none d-sm-block">Our commitment to quality and authenticity drives us to meticulously
                                 select products that embody wellness, sustainability, and ethical sourcing. With a
                                 foundation built on trust and innovation, we continue to expand our reach, providing
                                 access to premium wellness products across 27 markets worldwide.</p>
@@ -203,6 +215,14 @@
                                 </div>
                             </div>
                         </div>
+                        <p class="text-start d-block d-sm-none mt-3">JMD Group is a pioneering force in the distribution of organic,
+                            natural, and Ayurveda-based wellness products. Established over 25 years ago, our
+                            journey began with a vision to bring the world's most trusted health and wellness brands
+                            to consumers globally. <span class="read-more text-decoration-underline" id="about-card-text">Read More</span></p>
+                        <p class="text-start d-block d-sm-none read-more-text" data-read-more="about-card-text">Our commitment to quality and authenticity drives us to meticulously
+                            select products that embody wellness, sustainability, and ethical sourcing. With a
+                            foundation built on trust and innovation, we continue to expand our reach, providing
+                            access to premium wellness products across 27 markets worldwide.</p>
                     </div>
                 </div>
             </div>
@@ -237,7 +257,6 @@
         </section>
         <!-- ============ Video  Section End -->
 
-
         <!-- Why Choose Us Section Strat ============ -->
         <section class="why-choose-us" id="why-choose-us">
             <div class="container-xxl">
@@ -247,45 +266,57 @@
                 </div>
                 <div class="why-choose-container">
                     <div class="row mt-3">
-                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
-                            <div class="why-choose-box py-3">
+                        <div class="col-6 p-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+                            <div class="why-choose-box p-2 p-md-3">
                                 <img src="image/why-choose-1.png" alt="">
                                 <h5>25+ years of Industry Experience</h5>
                                 <p>With over 25 years of hands-on experience, we have a deep understanding of industry
-                                    trends, challenges, and opportunities, allowing us to deliver proven, effective
-                                    solutions that meet the evolving needs of our clients.
+                                    trends, challenges, and opportunities, allowing us to 
+                                    <span class="read-more" id="why-choose-1">...</span> 
+                                    <span class="read-more-text" data-read-more="why-choose-1">
+                                        deliver proven, effective solutions that meet the evolving needs of our clients.
+                                    </span>
                                 </p>
                                 <!-- <a href="">Read More</a> -->
                             </div>
                         </div>
-                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
-                            <div class="why-choose-box py-3">
+                        <div class="col-6 p-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+                            <div class="why-choose-box p-2 p-md-3">
                                 <img src="image/why-choose-2.png" alt="">
                                 <h5>Professional Team of Experts</h5>
                                 <p>Our team is composed of seasoned professionals who bring a wealth of knowledge,
-                                    skills, and creativity to every project. Each expert is dedicated to providing
-                                    high-quality services and ensuring the success of our clients.</p>
+                                    skills, and creativity to every project. Each expert is  <span class="read-more" id="why-choose-2">...</span> <span class="read-more-text" data-read-more="why-choose-2">dedicated to providing
+                                        high-quality services and ensuring the success of our clients.</span></p>
                                 <!-- <a href="">Read More</a> -->
                             </div>
                         </div>
-                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
-                            <div class="why-choose-box py-3">
+                        <div class="col-6 p-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
+                            <div class="why-choose-box p-2 p-md-3">
                                 <img src="image/why-choose-3.png" alt="">
                                 <h5>Exclusive Distribution Rights</h5>
                                 <p>We hold exclusive distribution rights for a range of premium products and services,
-                                    enabling us to offer unique, high-value solutions that are not available through
-                                    other channels, giving our clients a competitive edge.
+                                    enabling us to offer unique, high-value solutions
+                                    <span class="read-more" id="why-choose-3">...</span> 
+                                    <span class="read-more-text" data-read-more="why-choose-3">
+                                          that are not available through
+                                        other channels, giving our clients a competitive edge.
+                                    </span>
                                 </p>
                                 <!-- <a href="">Read More</a> -->
                             </div>
                         </div>
-                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700">
-                            <div class="why-choose-box py-3">
+                        <div class="col-6 p-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="700">
+                            <div class="why-choose-box p-2 p-md-3">
                                 <img src="image/why-choose-4.png" alt="">
                                 <h5>Trusted Relationships</h5>
                                 <p>Over the years, we have built strong, long-lasting relationships with key partners
-                                    and clients. These trusted connections are the cornerstone of our business,
-                                    fostering collaboration, mutual growth, and continued success.</p>
+                                    and clients. These trusted connections are the 
+                                    
+                                    <span class="read-more" id="why-choose-4">...</span> 
+                                    <span class="read-more-text" data-read-more="why-choose-4">
+                                        cornerstone of our business, fostering collaboration, mutual growth, and continued success.
+                                    </span>
+                                </p>
                                 <!-- <a href="">Read More</a> -->
                             </div>
                         </div>
@@ -295,19 +326,17 @@
         </section>
         <!-- ============ Why Choose Us Section End -->
 
-       
-
         <!-- Our Product Section Strat ============ -->
         <section class="our-product" id="our-product">
             <div class="container-xxl">
-                <div class="row align-items-center">
-                    <div class="col-6 text-start">
+                <div class="row align-items-end">
+                    <div class="col-md-6 text-start">
                         <div class="sec-head" data-aos="fade-up" data-aos-duration="500">
                             <img src="image/sec-h-img.png" alt="">
                             <h2>Our Products</h2>
                         </div>
                     </div>
-                    <div class="col-6 text-end">
+                    <div class="col-6 text-end d-none d-md-block">
                         <a href="" class="th-btn">Download Catelogue</a>
                     </div>
                 </div>
@@ -338,6 +367,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="d-flex d-md-none">
+                    <a href="" class="th-btn w-100">Download Catelogue</a>
                 </div>
             </div>
         </section>
@@ -458,7 +490,7 @@
                     <h2 class="text-center">Hear from our valued brand partners</h2>
                     <p class="text-center">Look at what our trusted partners say about collaboration and success!</p>
                 </div>
-                <div class="testimonial-container mt-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+                <div class="testimonial-container mt-3 mt-md-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
                     <div class="row justify-content-evenly align-items-center">
                         <div class="col-11 col-md-8 order-md-1">
                             <div class="testimonial-slider">
@@ -584,37 +616,37 @@
             </div>
             <div class="container-fluid" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
                 <div class="placements-slider mt">
-                    <div class="placement-box px-2 px-sm-4">
+                    <div class="placement-box px-2 px-sm-3">
                         <img src="image/placement-1.jpg" alt="" class="w-100">
                     </div>
-                    <div class="placement-box px-2 px-sm-4">
+                    <div class="placement-box px-2 px-sm-3">
                         <img src="image/placement-2.png" alt="" class="w-100">
                     </div>
-                    <div class="placement-box px-2 px-sm-4">
+                    <div class="placement-box px-2 px-sm-3">
                         <img src="image/placement-3.png" alt="" class="w-100">
                     </div>
-                    <div class="placement-box px-2 px-sm-4">
+                    <div class="placement-box px-2 px-sm-3">
                         <img src="image/placement-4.jpg" alt="" class="w-100">
                     </div>
-                    <div class="placement-box px-2 px-sm-4">
+                    <div class="placement-box px-2 px-sm-3">
                         <img src="image/placement-5.png" alt="" class="w-100">
                     </div>
-                    <div class="placement-box px-2 px-sm-4">
+                    <div class="placement-box px-2 px-sm-3">
                         <img src="image/placement-6.png" alt="" class="w-100">
                     </div>
-                    <div class="placement-box px-2 px-sm-4">
+                    <div class="placement-box px-2 px-sm-3">
                         <img src="image/placement-7.png" alt="" class="w-100">
                     </div>
-                    <div class="placement-box px-2 px-sm-4">
+                    <div class="placement-box px-2 px-sm-3">
                         <img src="image/placement-8.png" alt="" class="w-100">
                     </div>
-                    <div class="placement-box px-2 px-sm-4">
+                    <div class="placement-box px-2 px-sm-3">
                         <img src="image/placement-9.png" alt="" class="w-100">
                     </div>
-                    <div class="placement-box px-2 px-sm-4">
+                    <div class="placement-box px-2 px-sm-3">
                         <img src="image/placement-10.png" alt="" class="w-100">
                     </div>
-                    <div class="placement-box px-2 px-sm-4">
+                    <div class="placement-box px-2 px-sm-3">
                         <img src="image/placement-11.png" alt="" class="w-100">
                     </div>
                 </div>
@@ -622,17 +654,50 @@
         </div>
         <!-- ============ Our Placements Section End -->
 
-        
-
-
         <!-- Contact Us Section Strat ============ -->
         <section class="contact-us" id="contact-us">
             <div class="container-xxl">
                 <div class="row justify-content-between">
-                    <div class="col-md-5" data-aos="fade-up" data-aos-duration="500">
+                    <div class="col-md-7 p-md-auto p-0 order-md-1" data-aos="fade-up" data-aos-duration="500">
+                        <div class="contact-form mb-4 mb-md-0">
+                            <h2>Let&lsquo;s Build a Partnership</h2>
+                            <p class="m-0">We&lsquo;d love to hear from you! Whether you have partnership inquiries or general
+                                questions, simply fill out the form below, and our team will get back to you shortly.
+                            </p>
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                        <label for="name">Your Name*</label>
+                                        <input type="text" name="name" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <label for="number">Your Phone Number*</label>
+                                        <input type="text" name="number" id="number" required>
+                                    </div>
+                                    <div class="col-md-12 mt-3">
+                                        <label for="email" id="email">Your Email*</label>
+                                        <input type="text" name="email" id="email" required>
+                                    </div>
+                                    <div class="col-md-12 mt-3">
+                                        <label for="website">Company&lsquo;s Website Link</label>
+                                        <input type="text" name="website" id="website">
+                                    </div>
+                                    <div class="col-md-12 mt-3">
+                                        <label for="writr-us">Write Us</label>
+                                        <textarea name="writr-us" id="writr-us" rows="3"></textarea>
+                                    </div>
+                                    <div class="col-12 d-flex flex-column flex-md-row justify-content-end mt-3">
+                                        <button class="th-btn yellow"> Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-5 order-md-0" data-aos="fade-up" data-aos-duration="500">
                         <div class="sec-head flex-row">
                             <img src="image/sec-h-img.png" alt="">
-                            <h6> Contact Us</h6>
+                            <h6 class="d-none d-md-block"> Contact Us</h6>
+                            <h2 class="d-block d-md-none"> Contact Us</h2>
                         </div>
                         <div class="d-flex flex-wrap gap-3 gap-md-0 d-md-block">
                             <div class="contact-info d-flex gap-3 mb-3 mb-md-4">
@@ -671,46 +736,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-7" data-aos="fade-up" data-aos-duration="500">
-                        <div class="contact-form">
-                            <h2>Let&lsquo;s Build a Partnership</h2>
-                            <p>We&lsquo;d love to hear from you! Whether you have partnership inquiries or general
-                                questions, simply fill out the form below, and our team will get back to you shortly.
-                            </p>
-                            <form action="">
-                                <div class="row">
-                                    <div class="col-md-6 mt-3">
-                                        <label for="name">Your Name*</label>
-                                        <input type="text" name="name" id="name" required>
-                                    </div>
-                                    <div class="col-md-6 mt-3">
-                                        <label for="number">Your Phone Number*</label>
-                                        <input type="text" name="number" id="number" required>
-                                    </div>
-                                    <div class="col-md-12 mt-3">
-                                        <label for="email" id="email">Your Email*</label>
-                                        <input type="text" name="email" id="email" required>
-                                    </div>
-                                    <div class="col-md-12 mt-3">
-                                        <label for="website">Company&lsquo;s Website Link</label>
-                                        <input type="text" name="website" id="website">
-                                    </div>
-                                    <div class="col-md-12 mt-3">
-                                        <label for="writr-us">Write Us</label>
-                                        <textarea name="writr-us" id="writr-us" rows="5"></textarea>
-                                    </div>
-                                    <div class="col-12 d-flex justify-content-end mt-3">
-                                        <button class="th-btn yellow"> Submit</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
         <!-- ============ Contact Us Section End -->
-
 
         <!-- Get In Touch Section Strat ============ -->
         <section class="get-in-touch d-flex flex-column flex-md-row align-items-center justify-content-between ">
@@ -720,7 +749,7 @@
                     Enter your email for partnership opportunities or any inquiries. Our team will respond
                     promptly!
                 </p>
-                <form action="" class="d-flex align-items-center gap-2 gap-sm-3 flex-wrap">
+                <form action="" class="d-flex align-items-md-center flex-column flex-md-row gap-2 gap-sm-3 flex-wrap">
                     <input type="email" name="" required placeholder="Your e-mail...">
                     <button class="th-btn yellow">Get in touch</button>
                 </form>
@@ -865,7 +894,7 @@
                 {
                     breakpoint: 576,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                         slidesToScroll: 1
                     }
                 }
@@ -899,7 +928,7 @@
                 {
                     breakpoint: 576,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                         slidesToScroll: 1
                     }
                 }
@@ -913,7 +942,10 @@
             $(".sec-tab-text").slideUp()
             $(this).next().slideToggle(500)
         })
-
+        $('.read-more').click(function(){
+            const id = $(this).attr('id')
+            $(`[data-read-more="${id}"]`).toggleClass('active')
+        })
     </script>
     <script>
         AOS.init();
