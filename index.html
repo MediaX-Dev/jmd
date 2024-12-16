@@ -42,20 +42,20 @@
     <!-- Slick slider Css  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
-
 </head>
 
 <body>
     <!-- Header Section Strat ============ -->
     <header>
-        <div class=" container-xxl py-3">
+        <div class="container-xxl py-3">
             <div class="d-flex justify-content-between align-items-center">
                 <div>
                     <a class="navbar-brand" href="#">
                         <img src="image/logo.png" class="w-100" alt="">
                     </a>
                 </div>
-                <div>
+                <div class="d-flex gap-3">
+                    <a href="https://jmd.store.unleashedsoftware.com/login" target="_blank" class="th-btn yellow">Create Account</a>
                     <a class="th-btn d-block" href="#contact-us">Get in Touch</a>
                 </div>
             </div>
@@ -175,7 +175,7 @@
                         <div class="about-text">
                             <div class="sec-head" data-aos="fade-up" data-aos-duration="500">
                                 <img src="image/sec-h-img.png" alt="">
-                                <h2>Distributors of Ayurvedic, Natural, and Organic Body Care</h2>
+                                <h2>Distributors of Ayurvedic, Natural & Organic Wellness Products</h2>
                             </div>
                             <!-- <h2 class="mb-5">Distributors of Ayurvedic body care.</h2> -->
                             <p class="text-start d-none d-sm-block">JMD Group is a pioneering force in the distribution
@@ -562,11 +562,12 @@
                                                 logistics, and elevating our brand image in the eyes of our consumers
                                                 and retail customers
                                                 <span class="read-more" id="test-2">...</span>
-                                    <span class="read-more-text" data-read-more="test-2">
-                                        Their expertise and support have been critical to
-                                        our rapid growth in the UK & EU.
-                                    </span>
-                                    ”</p>
+                                                <span class="read-more-text" data-read-more="test-2">
+                                                    Their expertise and support have been critical to
+                                                    our rapid growth in the UK & EU.
+                                                </span>
+                                                ”
+                                            </p>
                                         </div>
                                         <div class="test-name mt-3">Ayurverdè Global</div>
                                         <div class="test-desig">Founder</div>
@@ -588,11 +589,11 @@
                                             <p>“Every warehouse is not for everyone, however, the relationship with JMD
                                                 Group has been more of a partnership and an extension of our company
                                                 versus a traditional client-customer relationship. It is invaluable to
-                                                have a partner 
+                                                have a partner
                                                 <span class="read-more" id="test-3">...</span>
-                                    <span class="read-more-text" data-read-more="test-3">
-                                        who is just as equally invested in your success.
-                                    </span>
+                                                <span class="read-more-text" data-read-more="test-3">
+                                                    who is just as equally invested in your success.
+                                                </span>
                                                 ”
                                             </p>
                                         </div>
@@ -620,10 +621,12 @@
                                                 <span class="read-more" id="test-4">...</span>
                                                 <span class="read-more-text" data-read-more="test-4">
                                                     monthly basis makes all the difference in the world.
-                                                They know my business needs and are always looking down the road for new
-                                                and better products to help us grow. They are the best in the business
-                                                and are truly committed to helping their customers source the most
-                                                outstanding products.
+                                                    They know my business needs and are always looking down the road for
+                                                    new
+                                                    and better products to help us grow. They are the best in the
+                                                    business
+                                                    and are truly committed to helping their customers source the most
+                                                    outstanding products.
                                                 </span>
                                                 ”
                                             </p>
@@ -865,7 +868,8 @@
                 </div>
             </div>
             <div class="foot-bottom mt-5">
-                <p><a class="text-center text-decoration-none text-white" target="_blank" href="https://mediax.co.in/">CREATED WITH 🤍 BY MEDIAX</a></p>
+                <p><a class="text-center text-decoration-none text-white" target="_blank"
+                        href="https://mediax.co.in/">CREATED WITH 🤍 BY MEDIAX</a></p>
             </div>
         </div>
     </footer>
@@ -990,7 +994,14 @@
             $(this).addClass('d-none')
             $(`[data-read-more="${id}"]`).toggleClass('active')
         })
-
+        $(window).scroll(() => {
+            let st = $(window).scrollTop()
+            if(st>0){
+                $('header').addClass('active');
+            } else{
+                $('header').removeClass('active');
+            }
+        })
     </script>
     <script>
         AOS.init();
