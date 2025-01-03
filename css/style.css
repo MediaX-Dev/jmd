@@ -504,7 +504,7 @@ header.active>.container-xxl{
 }
 
 .our-placements img {
-    border-radius: 30px;
+    border-radius: 30px !important;
 }
 
 .our-placements-head {
